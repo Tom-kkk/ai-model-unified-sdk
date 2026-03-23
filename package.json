@@ -1,0 +1,39 @@
+{
+  "name": "ai-model-unified-sdk",
+  "version": "0.1.1",
+  "description": "Unified provider SDK demo with native Node.js adapters.",
+  "type": "commonjs",
+  "main": "./src/sdk/index.js",
+  "exports": {
+    ".": {
+      "require": "./src/sdk/index.js",
+      "import": "./src/sdk/index.mjs",
+      "default": "./src/sdk/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "ai-model-unified-sdk-demo": "./index.js"
+  },
+  "files": [
+    "src",
+    "index.js",
+    "README.md",
+    ".env.example"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "sdk",
+    "llm",
+    "openai-compatible",
+    "alibaba",
+    "baidu",
+    "zhipu"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
